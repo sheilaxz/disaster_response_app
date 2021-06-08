@@ -17,7 +17,8 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import GridSearchCV
 import pickle
 
-from app.utils import tokenize
+from utility.utils import tokenize
+
 
 import nltk
 nltk.download(['punkt', 'wordnet', 'stopwords'])
@@ -69,8 +70,8 @@ def build_model():
         
     
     parameters = {
-        'vect__ngram_range': ((1, 1), (1, 2)),
-        'clf__estimator__n_estimators': [10, 50, 100]
+#        'vect__ngram_range': ((1, 1), (1, 2)),
+        'clf__estimator__n_estimators': [10, 100]
     }
 
     cv = GridSearchCV(pipeline_GB, param_grid=parameters)
