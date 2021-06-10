@@ -44,23 +44,6 @@ def load_data(database_filepath):
     return X, Y, category_names
 
 
-#def tokenize(text):
-
-#    tokens = word_tokenize(text)
-#    text = REPLACE_BY_SPACE_RE.sub(' ', text) # replace REPLACE_BY_SPACE_RE symbols by space in text
-#    text = BAD_SYMBOLS_RE.sub('', text) # delete symbols which are in BAD_SYMBOLS_RE from text
-
-#    tokens = [w for w in tokens if w not in stopwords.words('english')]
-#    lemmatizer = WordNetLemmatizer()
-
-#    clean_tokens = []
-#    for tok in tokens:
-#        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
-#        clean_tokens.append(clean_tok)
-
-#    return clean_tokens
-
-
 def build_model():
     pipeline_GB = Pipeline([
             ('vect', CountVectorizer(tokenizer=tokenize)),
@@ -70,7 +53,7 @@ def build_model():
         
     
     parameters = {
-#        'vect__ngram_range': ((1, 1), (1, 2)),
+        'vect__ngram_range': ((1, 1), (1, 2)),
         'clf__estimator__n_estimators': [10, 100]
     }
 
