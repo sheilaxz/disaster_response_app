@@ -33,7 +33,8 @@ def clean_data(df):
         Merged dataset generated from raw datasets using function load_data()
 
     Output: 
-        Cleaned dataset - each category is represented by a column with binary values
+        Cleaned dataset 
+            - Original Y (category column) is converted to 36 binary columns
     """
 
 
