@@ -4,6 +4,7 @@
 2. [File Description](#files)
 3. [Heroku Web App](#webapp)
 4. [Licensing, Authors, and Acknowledgements](#licensing)
+5. [Other resources](#others)
 
 ## Introduction <a name="intro"></a>
 
@@ -39,6 +40,8 @@ With the cleaned dataset, a machine learning pipeline is created to train a clas
 - Evaluating the model based on prediction precision, recall, and f1-score  
 - Saving the trained and tuned model into a pickle file named "classfier.pkl"
 
+A separate file named "utils.py" can be found in folder "utility," where the tokenize function is saved and imported from in the pipeline.
+
 
 ### Deployment
 
@@ -72,3 +75,8 @@ Must give credits to:
 - Udacity, who guides through this natural language processing project
 
 Also give credits to Rajat S., a mentor of the Udacity Data Science Nanodegree program, helped solve issues in the deployment process.
+
+
+## Other resources <a name="others"></a>
+
+More details of the process of creating the two pipelines (data processing and machine learning) can be found [here](https://github.com/sheilaxz/disaster_response) in two Jupyter notebooks "ETL Pipeline Preparation.ipynb" and "ML Pipeline Preparation.ipynb." This github repository includes files to generate the same disaster response app locally.

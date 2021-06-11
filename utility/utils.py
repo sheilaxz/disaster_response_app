@@ -11,6 +11,15 @@ REPLACE_BY_SPACE_RE = re.compile('[/(){}\[\]\|@,;]')
 BAD_SYMBOLS_RE = re.compile('[^0-9a-zA-Z #+_]')
 
 def tokenize(text):
+    """
+    A tokenizer for countvectorize.
+    
+    Input: 
+        text: raw text message string
+    
+    Output: 
+        clean_tokens: a list of text strings
+    """
 
     tokens = word_tokenize(text)
     text = REPLACE_BY_SPACE_RE.sub(' ', text) # replace REPLACE_BY_SPACE_RE symbols by space in text
