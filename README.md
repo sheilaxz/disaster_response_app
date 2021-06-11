@@ -6,7 +6,7 @@
 4. [Licensing, Authors, and Acknowledgements](#licensing)
 5. [Other resources](#others)
 
-## Introduction <a name="intro"></a>
+## 1. Introduction <a name="intro"></a>
 
 This project is an analysis of disaster data from Figure Eight to build a model for an API that classifies disaster messages.  
 
@@ -14,7 +14,7 @@ The data set contains real messages that were sent during disaster events. A mac
 
 The machine learning pipeliine includes natural language processing (text processing), feature extraction, modeling, and Flask web app development. In the [web app](https://disaster-response-ml-project.herokuapp.com/), one can input a new message and get classification results. The web app also displays visualizations of the training dataset.  
 
-## File Description <a name="files"></a>
+## 2. File Description <a name="files"></a>
 
 ### Raw datasets and data processing
 
@@ -61,14 +61,14 @@ python run.py
 ```
 
 
-## Heroku Web App <a name="webapp"></a>
+## 3. Heroku Web App <a name="webapp"></a>
 
 One may access the web app [here](https://disaster-response-ml-project.herokuapp.com/). It might take a while to load the page.  
 
 To use the app, enter a piece of message (in English) in the text box, and click the "Classify Message" button. The app will automatically process text data and return relevant categories.
 
 
-## Licensing, Authors, and Acknowledgements <a name="licensing"></a>
+## 4. Licensing, Authors, and Acknowledgements <a name="licensing"></a>
 
 Must give credits to: 
 - Figure Eight, who kindly provides the raw datasets, and 
@@ -77,6 +77,6 @@ Must give credits to:
 Also give credits to Rajat S., a mentor of the Udacity Data Science Nanodegree program, helped solve issues in the deployment process.
 
 
-## Other resources <a name="others"></a>
+## 5. Other resources <a name="others"></a>
 
 More details of the process of creating the two pipelines (data processing and machine learning) can be found [here](https://github.com/sheilaxz/disaster_response) in two Jupyter notebooks "ETL Pipeline Preparation.ipynb" and "ML Pipeline Preparation.ipynb." This github repository includes files to generate the same disaster response app locally.
